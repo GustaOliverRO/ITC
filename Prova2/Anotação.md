@@ -5,7 +5,7 @@
 qualquer algoritmo que possamos escrever em qualquer 
 linguagem de programação conhecida.
 
-> **Problema de Decisão**, é uma linguagem sobre um 
+>> **Problema de Decisão**, é uma linguagem sobre um 
 alfabeto binário. Encontrar um solução para um problema 
 de decisão Lsignifica apresentar um algortimo que posse 
 ser usado para determinar sistematicametne, em uma 
@@ -18,7 +18,7 @@ disposta na fita de dados, logo, o domínio da função
 cada momento a máquina estará em um determinado estado
 lendo uma posiçao específica da fita de dados;
 	
-> *Máquina de Turing*, é uma 7-tupla M(Q,Σ,Γ,δ,q0,B,F), 
+>> *Máquina de Turing*, é uma 7-tupla M(Q,Σ,Γ,δ,q0,B,F), 
 tal que:
 - Q é conjunto finito de estados;
 - Σ é o alfabeto de entrada. Quando não especificado será o 
@@ -31,9 +31,9 @@ contifo igual no alfabeto da fita;
 - B é o símbolo especial chamado de *símbolo branco*;
 - F está contido ou igual a Q, é o conjunto de estados finais;
 		
-> Terminalogia: 'a cabeça de leitura (cabeçote) da máquina 
+>> Terminalogia: 'a cabeça de leitura (cabeçote) da máquina 
 está escaneando uma determinada célula da fita de dados'.
->> Funcionamento,  Suponha que a função δ(q,X) retorna
+>>> Funcionamento,  Suponha que a função δ(q,X) retorna
 (q',X',d). Neste caso, o que acontece é que a se máquina 
 estiver no estado q com o símbolo X na célula sendo escaneada 
 na fita, então ela fará uma transição para o estado q', 
@@ -49,14 +49,14 @@ Exercício, fazer uma MT para a linguagem L, sendo que
 L = {a^nb^nc^n : n>= 1} , sobre o alfabeto = {a,b,c};
 		
 ### Linguagem de uma Máquina de Turing
-> Linguagem de uma MT, o processo de uma MT será, similar ao 
+>> Linguagem de uma MT, o processo de uma MT será, similar ao 
 de um AP, possuirá uma sequência de configuarações;
 		
-> **Configuração**, dada uma Máquina de Turing 
+>> **Configuração**, dada uma Máquina de Turing 
 M = (Q,Σ,Γ,δ, q0,B,F), uma configuração de M é uma tripla 
 (α,q,β) tal que α,β ∈ Γ^∗e q ∈ Q.
  		
-> **Passo computacional à esquerda**, Seja M uma MT com a 7-
+>> **Passo computacional à esquerda**, Seja M uma MT com a 7-
 tupla já definida e (X1...Xi-1qXiXi+1...Xn) uma configuração 
 de M. Se δ(q,Xi)=(p,Y,L), então escrevemos
 (X1...Xi−1qXiXi+1...Xn)|-l,M (X1...Xi−2pXi−1YXi+1...Xn).
@@ -70,14 +70,14 @@ uma MT com o movimento do cabeçote da máuina para a esquerda;
 
 ***Fazer Exercício 5.1*** 
 
-> **Passo Computacional de uma Máquina de Turing**, dada uma 
+>> **Passo Computacional de uma Máquina de Turing**, dada uma 
 MT M, um passo computacional , denotado |-M, se refere a 
 qualquer um dos três casos de passos computacionais, sendo |-
 lM,|-rM e |-sM;
 - OBS: A notação |-*M, refere-se a vários passos de uma só 
 vez, ou seja, I|-*M J se, I|-M K e K|-*M J;
 
-> **Configurações iniciais e finais**, sendo M uma MT como já 
+>> **Configurações iniciais e finais**, sendo M uma MT como já 
 definida e w  ∈ Σ^∗. A configuração (ε,q0,w) é chamada de 
 configuração inicial de M com w. Se p ∈ F, então qualquer 
 configuração da forma (α, p,β), tal que α,β são strings de Γ^∗ 
@@ -91,12 +91,12 @@ transição definidas.
 
 ***Fazer Exercício 5.2***
 
-> **String aceitas e string não aceitas por MTs**, sendo M uma 
+>> **String aceitas e string não aceitas por MTs**, sendo M uma 
 MT já definida, dizemos que uma string w ∈ Σ^∗ é aceita por M 
 se  q0w|-*M If, tal que If é uma configuração final de M. Caso 
 contrário, dizemos que M não aceita w.
 
-> **Strings Rejeitadas por MTs**, sendo M uma MT, como já 
+>> **Strings Rejeitadas por MTs**, sendo M uma MT, como já 
 definida, dizemos que uma string w ∈ Σ^∗ é rejeitada por M se 
 q0w|-*M In, tal que In não é uma configuração final de M e MT 
 para ao atingir a configuração In.
@@ -108,16 +108,16 @@ MT entrará em LOOP e não findará sua execução.
 
 ***Fazer Exercício 5.3***
 
-> **Linguagens de Máquinas de Turing**, dada uma MT M como já 
+>> **Linguagens de Máquinas de Turing**, dada uma MT M como já 
 apresnetado, a linguagem L(M)={w ∈ Σ^∗:(ε,q0,w)|-∗M CF, tal 
 que CF é uma configuração final de M} é chamada de linguagem 
 de M.
 
-> **Linguagens Decididas por Máquinas de Turing**, seja L uma 
+>> **Linguagens Decididas por Máquinas de Turing**, seja L uma 
 linguagem, se existe uma MT que M talque L(M) = L, diz que M 
 decide L.
 
-> **Linguagens Aceitas por Máquinas de Turing**, seja L uma 
+>> **Linguagens Aceitas por Máquinas de Turing**, seja L uma 
 linguagem, se existe uma MT M tal que L(M) = L, dizemos que M 
 decide L.
 
@@ -131,23 +131,27 @@ positiva ou negativa, para toda entrada, sempre terminando.
 
 ### Um Alg. é uma MT que sempre para
 
-> **Algoritmo** é uma máquina de turing que sempre para.
+>> **Algoritmo** é uma máquina de turing que sempre para.
 
 ***Fazer Exercício 5.5 à 5.10***
 
 ### Variações de Máquina de Turing
 
-> **Teorema** se uma MT com alfabeto da fita  Γ decide uma 
+>> **Teorema** se uma MT com alfabeto da fita  Γ decide uma 
 linguagem L, então existe uma MT M' com alfabeto da fita
 Γ' = {0,1,B} que decide L.
 
-> **Teorema** se uma MT M com k fitas decide uma linguagem L, 
+>> **Teorema** se uma MT M com k fitas decide uma linguagem L, 
 então existe uma MT M'com uma fita que decide L.
 
 ***Fazer Exercício 5.11 à 5.13***
 
+## Computabilidade
 
--> ***Parou no início do capítulo de 6.Computabilidade***
+### Detalhes de "baixo nível" em MT
+>  
+
+>> 
 
 
 
