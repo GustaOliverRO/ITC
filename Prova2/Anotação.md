@@ -153,5 +153,19 @@ então existe uma MT M'com uma fita que decide L.
 
 >> 
 
+> Dado um objeto matemático S, usaremos a notação (xSy) para nos referir a string que codifica S.
+- **Codificação Binária**, dado um objeto matemático S, a notação xSy se refere a string que representa a codificação de S em binário. A maneira exata de como codificar o objeto S depende do tipo de objeto em questão e deve sempre estar clara no contexto.
+-> Ver algoritmos para transformar uma MT M em uma xMy;
 
+### Funções Computavéis
+> **Função Booleana**, seja F : {0,1}^* -> {0,1} uma função boolena. Suponha que existe um algoritmo M que tem o seguinte comportamento:
+* Se f(x) = 1, então M aceita x;
+* Se f(x) = 0, então M rejeita x;
+-> Isto seria uma função booleana computáveç;
+
+- **Notação**
+- M(x) = 1 quando M aceita  x e para;
+- M(x) = 0 quando M rejeita x e para;
+- M(x) = PARA quando M para com x, independete de aceitar ou rejeitar;
+- M(x) = LOOP quando M não para com a entrada x;
 
