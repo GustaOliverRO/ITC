@@ -400,7 +400,9 @@ dizemos que x é c-incompressível. Se uma string for
 1-incompressível, diremos simplesmente que ela é incompressível.
 
 > **Propriedade**, uma propriedade é uma função booleana 
-P : Σ^∗ → {0,1}. Dada uma string x ∈ Σ^∗, se P(x) = 1, diremos que x tem a propriedade P ou que a propriedade P é verdadeira para x. Caso contrário, diremos que a string x não tem a
+P : Σ^∗ → {0,1}. Dada uma string x ∈ Σ^∗, se P(x) = 1, diremos 
+que x tem a propriedade P ou que a propriedade P é verdadeira 
+para x. Caso contrário, diremos que a string x não tem a
 propriedade P ou que a propriedade P é falsa para x.
 
 > **Propriedade ubíqua**, é uma propriedade P que satisfaz o 
